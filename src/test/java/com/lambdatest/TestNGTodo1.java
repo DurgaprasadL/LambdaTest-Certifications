@@ -45,9 +45,13 @@ public class TestNGTodo1 {
 
         
         DesiredCapabilities caps = new DesiredCapabilities();
+        //caps.setCapability("tunnel", true);
         caps.setCapability("platform", operatingSystem);
         caps.setCapability("browserName", browser);
         caps.setCapability("version", version);
+        // caps.setCapability("platform","Windows 10");
+        // caps.setCapability("browserName", "chrome");
+        // caps.setCapability("version", "86.0");
         caps.setCapability("build", "TestNG With Java");
         caps.setCapability("name", m.getName() + this.getClass().getName());
         caps.setCapability("plugin", "git-testng");
@@ -65,8 +69,8 @@ public class TestNGTodo1 {
         ltOptions.put("accessKey", "L5diX2dR31OmsPDWOQmkvSDh43EYc9gPeXR5N8ZAZBAv9svwVt");
         ltOptions.put("visual", true);
         ltOptions.put("video", true);
-        ltOptions.put("project", "Untitled");
-        ltOptions.put("name", "TestNGTodo1");
+        ltOptions.put("project", "Cert");
+        ltOptions.put("name", "Test");
         ltOptions.put("tunnel", true);
         ltOptions.put("console", "info");
         ltOptions.put("selenium_version", "4.0.0");

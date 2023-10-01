@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="20" parallel="tests" name="Suite">
-  <test thread-count="20" parallel="classes" name="Test">
+  
+  <test name="Test">
     <parameter name = "browser" value="chrome"/>
     <parameter name = "version" value="86.0"/>
     <parameter name = "operatingSystem" value="Windows 10"/>
     <classes>
       <class name="com.lambdatest.TestNGTodo1"/>
-      <!--class name="com.lambdatest.TestNGTodo2"/-->
-      <!--class name="com.lambdatest.TestNGTodo3"/-->
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test1">
+    <parameter name = "browser" value="microsoftedge"/>
+    <parameter name = "version" value="87.0"/>
+    <parameter name = "operatingSystem" value="macOS Sierra"/>
+    <classes>
+      <class name="com.lambdatest.TestNGTodo3"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
